@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CDDMA</string>
+    <string name="head_title">CDDMA:</string>
+    <string name="capture_btn">CAPTURE</string>
+    <string name="library_btn">LIBRARY</string>
+    <string name="credits_btn">CREDITS</string>
+    <string name="credits_text">CREDITS PAGE</string>
+    <string name="library_text">LIBRARY PAGE</string>
+    <string name="take_pic_txt">Take a photo</string>
+    <string name="image_text">Disease Name</string>
+    <string name="title_activity_library">Library</string>
+    <string name="title_activity_credits">Credits</string>
+    <string name="title_activity_display">Display Image</string>
+    <string name="title_activity_capture_img">Capture Image</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="toggle_camera">Toggle Camera</string>
+    <string name="detect_object">Detect Disease</string>
+</resources>
