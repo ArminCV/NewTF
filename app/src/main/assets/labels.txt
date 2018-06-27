@@ -1,10 +1,6 @@
-footrot
-cattlewarts
+ectoparasites
 pinkeye
-lumpyskin
+solerot
 healthyskin
-soleulcer
-ringworm
-cattlelice
-mastitis
-mange
+cattlewarts
+lumpyskin
