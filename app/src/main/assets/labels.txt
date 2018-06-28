@@ -1,6 +1,5 @@
 ectoparasites
-pinkeye
 solerot
-healthyskin
 cattlewarts
+pinkeye
 lumpyskin

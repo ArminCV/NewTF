@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu"
+    android:background="@color/splashBackground">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:text="@string/head_title"
+        android:textSize="35sp" />
+
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/capture_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/corners"
+            android:text="@string/capture_btn"
+            android:textColor="#FFFFFF"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="144dp" />
+
+        <Button
+            android:id="@+id/library_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/corners"
+            android:text="@string/library_btn"
+            android:textColor="#FFFFFF"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="298dp" />
+
+        <Button
+            android:id="@+id/credits_btn"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/corners"
+            android:text="@string/credits_btn"
+            android:textColor="#FFFFFF"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="221dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/send_btn"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/corners"
+        android:text="SMS"
+        android:textColor="#FFFFFF"
+        android:layout_toRightOf="@id/lay"
+        android:layout_below="@id/lay"/>
+
+</RelativeLayout>

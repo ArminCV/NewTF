@@ -23,11 +23,8 @@ import java.util.concurrent.Executors;
 public class MainActivity extends AppCompatActivity {
 
     private static final String MODEL_PATH = "file:///android_asset/optimized_graph.pb";
-
-    //private static final String MODEL_PATH = "cow_graph.pb";
-
     private static final String LABEL_PATH = "file:///android_asset/labels.txt";
-    //private static final String LABEL_PATH = "cow_labels.txt";
+
     private static final int INPUT_SIZE = 299;
     private static final int IMAGE_MEAN = 128;
     private static final float IMAGE_STD = 128;
@@ -47,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         cameraView = findViewById(R.id.cameraView);
-        imageViewResult = findViewById(R.id.imageViewResult);
         textViewResult = findViewById(R.id.textViewResult);
         textViewResult.setMovementMethod(new ScrollingMovementMethod());
 
@@ -71,11 +67,9 @@ public class MainActivity extends AppCompatActivity {
 
                 bitmap = Bitmap.createScaledBitmap(bitmap, INPUT_SIZE, INPUT_SIZE, false);
 
-                imageViewResult.setImageBitmap(bitmap);
-
                 final List<Classifier.Recognition> results = classifier.recognizeImage(bitmap);
 
-                textViewResult.setText("DETECTED: " + results.toString());
+                textViewResult.setText("Suspected Disease: " + results.toString().replace("[", "").replace("]", ""));
 
             }
 

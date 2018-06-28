@@ -28,6 +28,7 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener{
             Button credits_btn = (Button) findViewById(R.id.credits_btn);
             credits_btn.setOnClickListener(this);
             Button send_btn = (Button) findViewById(R.id.send_btn);
+            send_btn.setOnClickListener(this);
 
         }catch(Exception e){}
     }
@@ -38,22 +39,24 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener{
         switch (v.getId()) {
             case R.id.capture_btn:
                 intent = new Intent(this, CaptureImage.class);
+                startActivity(intent);
                 break;
             case R.id.library_btn:
                 intent = new Intent(this, Library.class);
+                startActivity(intent);
                 break;
-//            case R.id.credits_btn:
-//                intent = new Intent(this, Credits.class);
-//                break;
+            case R.id.credits_btn:
+                intent = new Intent(this, Credits.class);
+                startActivity(intent);
+                break;
             case R.id.send_btn:
                 SmsManager smsManager = SmsManager.getDefault();
-                smsManager.sendTextMessage("09055578005", null, "A user has detected a disease", null, null);
+                smsManager.sendTextMessage("09333120555", null, "A user has detected a disease", null, null);
+                Toast.makeText(getApplicationContext(), "Message Sent!",Toast.LENGTH_SHORT).show();
                 break;
             default:
                 break;
         }
-        //start
-        startActivity(intent);
     }//onClick end
 
 }
