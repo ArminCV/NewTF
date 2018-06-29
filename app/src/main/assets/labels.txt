@@ -1,5 +1,6 @@
 ectoparasites
-solerot
-cattlewarts
+lameness
+healthyskin
 pinkeye
 lumpyskin
+cattlewarts

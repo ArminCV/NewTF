@@ -27,8 +27,6 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener{
             library_btn.setOnClickListener(this);
             Button credits_btn = (Button) findViewById(R.id.credits_btn);
             credits_btn.setOnClickListener(this);
-            Button send_btn = (Button) findViewById(R.id.send_btn);
-            send_btn.setOnClickListener(this);
 
         }catch(Exception e){}
     }

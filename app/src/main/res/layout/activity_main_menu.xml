@@ -60,15 +60,5 @@
             tools:layout_editor_absoluteY="221dp" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/send_btn"
-        android:layout_width="88dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@drawable/corners"
-        android:text="SMS"
-        android:textColor="#FFFFFF"
-        android:layout_toRightOf="@id/lay"
-        android:layout_below="@id/lay"/>
 
 </RelativeLayout>
