@@ -1,18 +1,86 @@
 <resources>
     <string name="app_name">CDDMA</string>
     <string name="head_title">CDDMA:</string>
+
     <string name="capture_btn">CAPTURE</string>
     <string name="library_btn">LIBRARY</string>
     <string name="credits_btn">CREDITS</string>
+
     <string name="credits_text">CREDITS PAGE</string>
     <string name="library_text">LIBRARY PAGE</string>
     <string name="take_pic_txt">Take a photo</string>
     <string name="image_text">Disease Name</string>
+
     <string name="title_activity_library">Library</string>
     <string name="title_activity_credits">Credits</string>
     <string name="title_activity_display">Display Image</string>
     <string name="title_activity_capture_img">Capture Image</string>
     <string name="title_activity_splash_screen">SplashScreen</string>
+
     <string name="toggle_camera">Toggle Camera</string>
     <string name="detect_object">Detect Disease</string>
+    <string name="info_btn">Info</string>
+
+    <string name="epD"><b>EcotoPatasites</b>
+        \nFive species of louse infest cattle: the biting or chewing louse
+    </string>
+    <string name="epT"><b>Treatment</b>
+        \nUse a pour-on synthetic pyrethroid preparation such as deitamerthrin
+    </string>
+    <string name="epP"><b>Prevention</b>
+        \nAll cattle in direct contact must be treated
+    </string>
+
+    <string name="wrD"><b>Warts</b>
+        \nCattle warts are caused by an infectious and contagious virus
+        (bovine papilloma virus; BPV) that spreads via contact from infected
+        cattle to non-infected cattle
+    </string>
+    <string name="wrT"><b>Treatment</b>
+        \nIsolate affected cattle to reduce the chance of spread.
+        Warts can be removed surgically, or by tying a tight ligature
+        around the base, depending on the number, type, size and locations.
+    </string>
+    <string name="wrP"><b>Prevention</b>
+        \nIsolate affected cattle to reduce the chance of spread
+    </string>
+
+    <string name="lsD"><b>Lumpy Skin</b>
+        \nLumpy skin disease is an infectious disease in cattle caused by a virus of the family Poxviridae, also known as Neethling virus
+    </string>
+    <string name="lsT"><b>Treatment</b>
+        \nThere is no treatment for the virus, so prevention by vaccination is the most effective means of control
+    </string>
+    <string name="lsP"><b>Prevention</b>
+        \nVaccination is the most effective means of control, and live homologous vaccines containing a Neethling-like strain of LSDV are recommended
+    </string>
+
+
+    <string name="peD"><b>Pink Eye</b>
+        \nPinkeye, also known as infectious bovine keratoconjunctivitis (IBK),
+        is one of the most common diseases of beef cattle in Virginia.
+        It is a highly contagious disease, causing inflammation of the
+        cornea (the clear outer layer) and conjunctiva (the pink membrane
+        lining the eyelids) of the eye
+
+    </string>
+    <string name="peT"><b>Treatment</b>
+        \nFly control using ear tags and pour-on insecticides is never absolute and repeated treatments prove costly
+    </string>
+    <string name="peP"><b>Prevention</b>
+        \nOutbreaks of IBK may occur after the introduction of purchased stock therefore, whenever possible, all new stock should be managed separately as one group away from the main herd
+    </string>
+
+    <string name="lmD"><b>Lameness</b>
+        \nThe best all-encompassing definition of lameness includes any abnormality which causes a cow to change the way that she walks, and can be caused by a range of foot and leg conditions, themselves caused by disease, management or environmental factors
+
+    </string>
+    <string name="lmT"><b>Treatment</b>
+        \nDutch 5 step claw trimming - steps 1-3 correct claw shape and confirm the sole ulcer.Anti-inflammatory drugs
+    </string>
+    <string name="lmP"><b>Prevention</b>
+        \nGood nutrition is fundamentally important for the general health and productivity of dairy cows. However, there are no proven direct links with acidosis or laminitis.
+        Therefore, methods for reducing sole ulcers by altering diets alone, should focus on minimising body condition score loss.
+        Other preventative measures include reducing standing on concrete, particularly at calving
+    </string>
 </resources>

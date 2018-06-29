@@ -49,11 +49,11 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener{
                 intent = new Intent(this, Credits.class);
                 startActivity(intent);
                 break;
-            case R.id.send_btn:
-                SmsManager smsManager = SmsManager.getDefault();
-                smsManager.sendTextMessage("09333120555", null, "A user has detected a disease", null, null);
-                Toast.makeText(getApplicationContext(), "Message Sent!",Toast.LENGTH_SHORT).show();
-                break;
+//            case R.id.send_btn:
+//                SmsManager smsManager = SmsManager.getDefault();
+//                smsManager.sendTextMessage("09333120555", null, "A user has detected a disease", null, null);
+//                Toast.makeText(getApplicationContext(), "Message Sent!",Toast.LENGTH_SHORT).show();
+//                break;
             default:
                 break;
         }

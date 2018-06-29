@@ -47,13 +47,14 @@ public interface Classifier {
         public String toString() {
             String resultString = "";
             if (title != null) {
-                resultString += title + " ";
+                resultString = title;
             }
+            //to display confidence percent
+//            if (confidence != null) {
+//                //resultString += String.format("(%.1f%%) ", confidence * 100.0f);
+//                resultString += String.format(Locale.US, "%.1f%%", (confidence * 100.0f));
+//            }
 
-            if (confidence != null) {
-                //resultString += String.format("(%.1f%%) ", confidence * 100.0f);
-                resultString += String.format(Locale.US, "%.1f%%", (confidence * 100.0f));
-            }
             return resultString.trim();
         }
     }

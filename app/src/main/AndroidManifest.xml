@@ -30,7 +30,9 @@
         <activity
             android:name=".Library"
             android:screenOrientation="portrait" />
-        <activity android:name=".Credits"></activity>
+        <activity android:name=".Credits" />
+        <activity android:name=".DisplayInfo" />
+        <activity android:name=".SendInfo"></activity>
     </application>
 
 </manifest>

@@ -1,5 +1,6 @@
 package com.example.armin.newtf;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.wonderkiln.camerakit.CameraKitError;
 import com.wonderkiln.camerakit.CameraKitEvent;
@@ -35,9 +37,10 @@ public class MainActivity extends AppCompatActivity {
 
     private Executor executor = Executors.newSingleThreadExecutor();
     private TextView textViewResult;
-    private Button btnDetectObject, btnToggleCamera;
+    private Button btnDetectObject, info;
     private ImageView imageViewResult;
     private CameraView cameraView;
+    public String newDisease, result;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,8 +49,9 @@ public class MainActivity extends AppCompatActivity {
         cameraView = findViewById(R.id.cameraView);
         textViewResult = findViewById(R.id.textViewResult);
         textViewResult.setMovementMethod(new ScrollingMovementMethod());
-
         btnDetectObject = findViewById(R.id.btnDetectObject);
+        info = findViewById(R.id.info);
+        info.setVisibility(View.INVISIBLE);
 
         cameraView.addCameraKitListener(new CameraKitEventListener() {
             @Override
@@ -69,8 +73,14 @@ public class MainActivity extends AppCompatActivity {
 
                 final List<Classifier.Recognition> results = classifier.recognizeImage(bitmap);
 
-                textViewResult.setText("Suspected Disease: " + results.toString().replace("[", "").replace("]", ""));
+                result = results.toString().replace("[", "").replace("]", "");
 
+                textViewResult.setText("Suspected Disease: " + result);
+
+                if(result.equalsIgnoreCase("healthyskin")){}
+                else{
+                    info.setVisibility(View.VISIBLE);
+                }
             }
 
             @Override
@@ -86,7 +96,37 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                displayInfo(view);
+            }
+        });
+
         initTensorFlowAndLoadModel();
+    }
+
+    public void displayInfo(View v){
+        if(result.equalsIgnoreCase("healthyskin")){
+            Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
+        }else if(result.equalsIgnoreCase("ectoparasites")){
+            newDisease="Ectoparasites";
+        }
+        else if(result.equalsIgnoreCase("cattlewarts")){
+            newDisease="Cattle Warts";
+        }
+        else if(result.equalsIgnoreCase("lameness")){
+            newDisease="Lameness";
+        }
+        else if(result.equalsIgnoreCase("lumpyskin")){
+            newDisease="Lumpy Skin";
+        }
+        else if(result.equalsIgnoreCase("pinkeye")){
+            newDisease="Pink Eye";
+        }else { }
+        Intent intent = new Intent(this, SendInfo.class);
+        intent.putExtra("key", newDisease);
+        startActivity(intent);
     }
 
     @Override
