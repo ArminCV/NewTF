@@ -13,6 +13,7 @@ import android.widget.ListView;
 public class Library extends AppCompatActivity {
     String DiseaseList[] = {"Ectoparasites", "Cattle Warts", "Lumpy Skin", "Pink Eye", "Lameness"};
     ListView diseaseList;
+    Bundle bundle;
     public String description, treatment, prevention;
 
     @Override
@@ -20,6 +21,7 @@ public class Library extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_library);
 
+        bundle = new Bundle();
         diseaseList = (ListView) findViewById(R.id.diseaseList);
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.activity_library, R.id.textView, DiseaseList);
         diseaseList.setAdapter(arrayAdapter);
@@ -36,26 +38,31 @@ public class Library extends AppCompatActivity {
 
         switch (i){
                 case 0:
+                    bundle.putInt("image", R.drawable.ep_img);
                     description = getString(R.string.epD);
                     treatment = getString(R.string.epP);
                     prevention = getString(R.string.epT);
                     break;
                 case 1:
+                    bundle.putInt("image", R.drawable.cw_img);
                     description = getString(R.string.wrD);
                     treatment = getString(R.string.wrP);
                     prevention = getString(R.string.wrT);
                     break;
                 case 2:
+                    bundle.putInt("image", R.drawable.ls_img);
                     description = getString(R.string.lsD);
                     treatment = getString(R.string.lsP);
                     prevention = getString(R.string.lsT);
                     break;
                 case 3:
+                    bundle.putInt("image", R.drawable.pe_img);
                     description = getString(R.string.peD);
                     treatment = getString(R.string.peP);
                     prevention = getString(R.string.peT);
                     break;
                 case 4:
+                    bundle.putInt("image", R.drawable.lm_img);
                     description = getString(R.string.lmD);
                     treatment = getString(R.string.lmP);
                     prevention = getString(R.string.lmT);
@@ -63,7 +70,9 @@ public class Library extends AppCompatActivity {
                 default:
                     break;
             }//switch end
+
         Intent intent = new Intent(this, DisplayInfo.class);
+        intent.putExtras(bundle);
         intent.putExtra("1", description);
         intent.putExtra("2", treatment);
         intent.putExtra("3", prevention);

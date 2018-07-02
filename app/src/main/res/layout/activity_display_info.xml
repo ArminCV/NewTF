@@ -1,62 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".DisplayInfo" >
 
-    <TextView
-        android:id="@+id/description"
-        android:layout_width="315dp"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_centerHorizontal="true"
-        android:background="#FFF"
-        />
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <requestFocus/>
 
-    <TextView
-        android:id="@+id/treatment"
-        android:layout_width="315dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_below="@id/description"
-        android:layout_centerHorizontal="true"
-        android:background="#FFF"
-        />
+        <ImageView
+            android:id="@+id/imgv"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:contentDescription="Image"/>
 
-    <TextView
-        android:id="@+id/prevention"
-        android:layout_width="315dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_below="@id/treatment"
-        android:layout_centerHorizontal="true"
-        android:background="#FFF"
-        />
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgv"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp"
+            android:padding="12dp"
+            android:elevation="8dp"
+            android:textStyle="bold"
+            android:background="@color/white"
+            android:textColor="@color/colorPrimaryText"
+            />
 
-    <EditText
-        android:id="@+id/et_id"
-        android:layout_width="315dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/prevention"
-        android:ems="10"
-        android:layout_marginTop="15dp"
-        android:hint="Mobile#"
-        android:inputType="numberDecimal"
-        android:layout_centerHorizontal="true"
-        android:background="#FFF"
-        />
-    <Button
-        android:id="@+id/send_btn"
-        android:layout_width="88dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/et_id"
-        android:layout_margin="10dp"
-        android:layout_alignParentRight="true"
-        android:background="@drawable/corners"
-        android:text="Send Message"
-        android:textColor="#FFFFFF"
-        android:layout_toRightOf="@id/lay"
-        />
-</RelativeLayout>
+        <TextView
+            android:id="@+id/treatment"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/description"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp"
+            android:padding="12dp"
+            android:elevation="8dp"
+            android:textStyle="bold"
+            android:background="@color/white"
+            android:textColor="@color/colorPrimaryText"
+            />
+
+        <TextView
+            android:id="@+id/prevention"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/treatment"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp"
+            android:padding="12dp"
+            android:elevation="8dp"
+            android:textStyle="bold"
+            android:background="@color/white"
+            android:textColor="@color/colorPrimaryText"
+            />
+
+        <EditText
+            android:id="@+id/et_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prevention"
+            android:ems="10"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:hint="@string/mobile_num"
+            android:inputType="numberDecimal"
+            />
+
+        <Button
+            android:id="@+id/send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prevention"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/corners"
+            android:text="@string/send_btn"
+            android:textColor="#FFFFFF"
+            android:layout_toRightOf="@id/et_id"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>

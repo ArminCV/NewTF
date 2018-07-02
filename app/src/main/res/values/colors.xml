@@ -5,5 +5,6 @@
     <color name="colorAccent">#15B434</color>
     <color name="splashBackground">#9AEE49</color>
     <color name="img_btn_bg">#00cc00</color>
+    <color name="colorPrimaryText">#050505</color>
     <color name="white">#ffffff</color>
 </resources>

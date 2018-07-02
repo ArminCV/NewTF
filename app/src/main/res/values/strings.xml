@@ -18,8 +18,11 @@
     <string name="title_activity_splash_screen">SplashScreen</string>
 
     <string name="toggle_camera">Toggle Camera</string>
-    <string name="detect_object">Detect Disease</string>
+    <string name="detect_object">Detect</string>
     <string name="info_btn">Info</string>
+    <string name="send_btn">Send Message</string>
+
+    <string name="mobile_num">Mobile#</string>
 
     <string name="epD"><b>EcotoPatasites</b>
         \nFive species of louse infest cattle: the biting or chewing louse
@@ -62,7 +65,6 @@
         It is a highly contagious disease, causing inflammation of the
         cornea (the clear outer layer) and conjunctiva (the pink membrane
         lining the eyelids) of the eye
-
     </string>
     <string name="peT"><b>Treatment</b>
         \nFly control using ear tags and pour-on insecticides is never absolute and repeated treatments prove costly
@@ -73,7 +75,6 @@
 
     <string name="lmD"><b>Lameness</b>
         \nThe best all-encompassing definition of lameness includes any abnormality which causes a cow to change the way that she walks, and can be caused by a range of foot and leg conditions, themselves caused by disease, management or environmental factors
-
     </string>
     <string name="lmT"><b>Treatment</b>
         \nDutch 5 step claw trimming - steps 1-3 correct claw shape and confirm the sole ulcer.Anti-inflammatory drugs
@@ -83,4 +84,34 @@
         Therefore, methods for reducing sole ulcers by altering diets alone, should focus on minimising body condition score loss.
         Other preventative measures include reducing standing on concrete, particularly at calving
     </string>
+
+    <string name="credits_txt">Ager Novus would like to thank the following that helps us develop,
+        validate and certified the CDDMA: Cow Diseases Detector for Mobile Application."</string>
+    <string name="credits_txt2">Dairy Farms and Offices:
+        \n- Luzon Dairy Cooperative
+        \n- ARB Livestock
+        \n- Mateo Cow and Calf Farms
+        \n- City Veterinary Office (SJDM Branch)
+        \n- Municipality of San Jose Del Monte Bulacan</string>
+    <string name="credits_txt3">Veterinarians and Livestock Owners:
+        \n- Dr. Arvin Agapito
+        \n- Dr. Jayson Perez
+        \n- Dr. Rhommel Mendoza
+        \n- Dr. Jose Restituto De Ocampo
+        \n- Dr. Arby Banaa
+        \n- Mr. Allan Ray Baluyut
+        \n- Mr. Kiel Victor Mateo
+        \n- Mr. Andy Hilario</string>
+    <string name="credits_txt4">Contacts:
+        \n- Dr. Arvin Agapito   (09178025162/arvinagapito82@yahoo.com)
+        \n- Dr. Jayson Perez    (096550421936/jayson.perez@gmail.com.ph)
+        \n- Allan Ray Baluyut   (09178353721/konsi_arb@yahoo.com.ph)
+        \n- Kiel Victor Matero (09178938038)</string>
+    <string name="credits_txt5">Developers/Researchers:
+        \n- Allen Dale D. Baluyut
+        \n- Dan Elijah B. Inocentes
+        \n- Roy Ruiz Rogero
+        \n- Armin Carl E. Valdez</string>
+
+
 </resources>

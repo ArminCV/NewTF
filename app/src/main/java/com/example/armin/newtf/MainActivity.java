@@ -77,7 +77,10 @@ public class MainActivity extends AppCompatActivity {
 
                 textViewResult.setText("Suspected Disease: " + result);
 
-                if(result.equalsIgnoreCase("healthyskin")){}
+                if(result.equalsIgnoreCase("healthyskin")){
+                    info.setVisibility(View.INVISIBLE);
+                    Toast.makeText(getApplicationContext(), "Healthy Skin", Toast.LENGTH_LONG).show();
+                }
                 else{
                     info.setVisibility(View.VISIBLE);
                 }
@@ -137,6 +140,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onPause() {
+
         cameraView.stop();
         super.onPause();
     }
