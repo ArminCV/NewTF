@@ -5,24 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainMenu"
-    android:background="@color/splashBackground">
+    android:background="@drawable/bg_img">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/textView"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/cow_icon"
+        />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_above="@id/lay"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="51dp"
+        android:layout_marginBottom="60dp"
         android:text="@string/head_title"
-        android:textSize="35sp" />
-
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp" />
 
     <LinearLayout
         android:id="@+id/lay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -33,9 +45,7 @@
             android:layout_margin="10dp"
             android:background="@drawable/corners"
             android:text="@string/capture_btn"
-            android:textColor="#FFFFFF"
-            tools:layout_editor_absoluteX="148dp"
-            tools:layout_editor_absoluteY="144dp" />
+            android:textColor="#4c4c4c" />
 
         <Button
             android:id="@+id/library_btn"
@@ -44,20 +54,16 @@
             android:layout_margin="10dp"
             android:background="@drawable/corners"
             android:text="@string/library_btn"
-            android:textColor="#FFFFFF"
-            tools:layout_editor_absoluteX="148dp"
-            tools:layout_editor_absoluteY="298dp" />
+            android:textColor="#4c4c4c" />
 
         <Button
             android:id="@+id/credits_btn"
-            android:layout_width="88dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@drawable/corners"
             android:text="@string/credits_btn"
-            android:textColor="#FFFFFF"
-            tools:layout_editor_absoluteX="148dp"
-            tools:layout_editor_absoluteY="221dp" />
+            android:textColor="#4c4c4c" />
     </LinearLayout>
 
 

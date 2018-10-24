@@ -26,7 +26,7 @@
             android:layout_below="@id/imgv"
             android:layout_marginTop="15dp"
             android:layout_centerHorizontal="true"
-            android:textSize="12sp"
+            android:textSize="18sp"
             android:padding="12dp"
             android:elevation="8dp"
             android:textStyle="bold"
@@ -36,12 +36,12 @@
 
         <TextView
             android:id="@+id/treatment"
-            android:layout_width="315dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="20dp"
             android:layout_below="@id/description"
             android:layout_centerHorizontal="true"
-            android:textSize="12sp"
+            android:textSize="18sp"
             android:padding="12dp"
             android:elevation="8dp"
             android:textStyle="bold"
@@ -51,12 +51,12 @@
 
         <TextView
             android:id="@+id/prevention"
-            android:layout_width="315dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="20dp"
             android:layout_below="@id/treatment"
             android:layout_centerHorizontal="true"
-            android:textSize="12sp"
+            android:textSize="18sp"
             android:padding="12dp"
             android:elevation="8dp"
             android:textStyle="bold"
@@ -70,8 +70,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/prevention"
             android:ems="10"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
             android:hint="@string/mobile_num"
             android:inputType="numberDecimal"
             />
@@ -82,11 +82,12 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/prevention"
             android:layout_margin="10dp"
-            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentEnd="true"
             android:background="@drawable/corners"
             android:text="@string/send_btn"
-            android:textColor="#FFFFFF"
-            android:layout_toRightOf="@id/et_id"
+            android:textColor="@color/colorPrimaryText"
+            android:layout_toEndOf="@id/et_id"
             />
 
     </RelativeLayout>

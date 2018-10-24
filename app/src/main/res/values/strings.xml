@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">CDDMA</string>
-    <string name="head_title">CDDMA:</string>
+    <string name="head_title">CDDMA</string>
 
     <string name="capture_btn">CAPTURE</string>
     <string name="library_btn">LIBRARY</string>

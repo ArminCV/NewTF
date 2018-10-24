@@ -3,12 +3,10 @@ package com.example.armin.newtf;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.telephony.SmsManager;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class MainMenu extends AppCompatActivity implements View.OnClickListener{
 
@@ -38,20 +36,18 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener{
             case R.id.capture_btn:
                 intent = new Intent(this, CaptureImage.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 break;
             case R.id.library_btn:
                 intent = new Intent(this, Library.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 break;
             case R.id.credits_btn:
                 intent = new Intent(this, Credits.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 break;
-//            case R.id.send_btn:
-//                SmsManager smsManager = SmsManager.getDefault();
-//                smsManager.sendTextMessage("09333120555", null, "A user has detected a disease", null, null);
-//                Toast.makeText(getApplicationContext(), "Message Sent!",Toast.LENGTH_SHORT).show();
-//                break;
             default:
                 break;
         }

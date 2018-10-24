@@ -9,12 +9,12 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:background="@color/splashBackground"
-        app:srcCompat="@android:drawable/ic_menu_camera" />
+        android:background="@drawable/corners"
+        android:src="@drawable/cam_img"/>
 
     <TextView
         android:id="@+id/take_photo"
@@ -23,6 +23,7 @@
         android:layout_below="@id/imageButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
-        android:textColor="#000000"
-        android:text="@string/take_pic_txt" />
+        android:textColor="@color/white"
+        android:text="@string/take_pic_txt"
+        android:textSize="20sp"/>
 </RelativeLayout>
